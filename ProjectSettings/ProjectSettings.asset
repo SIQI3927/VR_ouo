@@ -143,7 +143,7 @@ PlayerSettings:
   preloadedAssets:
   - {fileID: -4994308975875967889, guid: d0a00d3bedd23ac4e822693611b102a9, type: 2}
   - {fileID: 11400000, guid: 35cd6cb91b9b64c4d8e5f439fdeb9ee8, type: 2}
-  - {fileID: 7807172469736276384, guid: 80cb9c8bf6463444086af83ee350c1bc, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -800,7 +800,10 @@ PlayerSettings:
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
